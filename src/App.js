@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Posts from './components/Posts'
+import PostForm from './components/PostForm'
 
 function App() {
   return (
@@ -12,9 +13,10 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Posts />
       </header>
-    
+      <PostForm />
+      <hr/>
+      <Posts />
     </div>
     
   );
