@@ -4,10 +4,9 @@ import './App.css';
 import { Provider } from "react-redux"; //Needed to Wrap Entire App also provides store
 import Posts from './components/Posts'
 import PostForm from './components/PostForm'
-import {createStore, applyMiddleware} from 'redux' //Needed for applyMiddleware
+import store from './Store'
 
 // npm i redux react-redux redux-thunk to Bring in all Redux Libraries
-const store = createStore(() => [], {}, applyMiddleware())
 
 class App extends Component {
   render(){
